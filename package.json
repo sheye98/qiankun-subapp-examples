@@ -3,13 +3,16 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
+    "dev": "vue-cli-service serve",
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
     "lint": "vue-cli-service lint"
   },
   "dependencies": {
     "core-js": "^3.6.5",
-    "vue": "^2.6.11"
+    "single-spa-vue": "^3.0.1",
+    "vue": "^2.6.11",
+    "vue-router": "^3.5.2"
   },
   "devDependencies": {
     "@vue/cli-plugin-babel": "~4.5.13",
@@ -21,6 +24,9 @@
     "vue-template-compiler": "^2.6.11"
   },
   "eslintConfig": {
+    "globals": {
+      "__webpack_public_path__": true
+    },
     "root": true,
     "env": {
       "node": true
